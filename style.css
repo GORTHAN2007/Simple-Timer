@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #e8edf3;
+    background-image: radial-gradient(#a9a9a9 1px, transparent 1px);
+    background-size: 20px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer{
+    width: 90vw;
+    height: 85vh;
+    border: 1.6px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+    background-color: #eaeaea;
+}
+/* main{
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    height: 100vh;
+    background-color: #e8edf3;
+    background-image: radial-gradient(#a9a9a9 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+.main_card{
+    background-color: #eaeaea;
+    border: 1px solid black;
+    margin: 5rem;
+} */
