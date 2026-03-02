@@ -6,35 +6,55 @@
     <title>Simple Timer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="timer">
-        <nav class="nav_bar">
-            <div class="logo_t">SIMPLE <span class="line"></span></div>
-            <div class="logo_b">TIMER <span class="line"></span></div>
-        </nav>
+    <div class="display">
+        <div class="timer">
+            <nav class="nav_bar">
+                <div class="timer_logo">
+                    <div class="logo_t">SIMPLE<span class="line1"></span></div>
+                    <div class="logo_b"><span class="line2"></span>TIMER</div>
+                </div>
+            </nav>
 
-        <main class="main_container">
-            <h1 id="timer_heading">Set your timer!</h1>
-            <div class="time">
-                <div class="time_block">
-                    <input type="number" id="hours" value="00" min="0" max="99">
-                    <span>Hours</span>
+            <main class="main_container">
+                <h1 id="timer_heading">Set your Timer!</h1>
+                <div class="time">
+                    <div class="time_block">
+                        <input type="number" id="hours" value="00" min="0" max="99">
+                        <span>Hours</span>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time_block">
+                        <input type="number" id="minutes" value="00" min="0" max="59">
+                        <span>Minutes</span>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time_block">
+                        <input type="number" id="seconds" value="00" min="0" max="59">
+                        <span>Seconds</span>
+                    </div>
                 </div>
-                <div class="colon">:</div>
-                <div class="time_block">
-                    <input type="number" id="minutes" value="00" min="0" max="59">
-                    <span>Minutes</span>
-                </div>
-                <div class="colon">:</div>
-                <div class="time_block">
-                    <input type="number" id="seconds" value="00" min="0" max="59">
-                    <span>Seconds</span>
-                </div>
-            </div>
-            <button class="str_stp_buton">START TIMER</button>
-        </main>
+                <button class="str_stp_buton">START TIMER</button>
+            </main>
+        </div>
     </div>
+    <footer>
+        <div class="developer">
+            <p class="developer-text">
+                Developed by <span class="name">ARJU SRIVASTAV</span>
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/arjusrivastav" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/GORTHAN2007" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

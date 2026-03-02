@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{
+.display{
     background-color: #e8edf3;
     background-image: radial-gradient(#a9a9a9 1px, transparent 1px);
     background-size: 20px 20px;
@@ -15,25 +15,124 @@ body{
 }
 .timer{
     width: 90vw;
-    height: 85vh;
-    border: 1.6px solid black;
+    height: 80vh;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 2rem;
     background-color: #eaeaea;
 }
-/* main{
-    display: flex;
-    justify-content:center;
-    align-items:start;
-    height: 100vh;
-    background-color: #e8edf3;
-    background-image: radial-gradient(#a9a9a9 1px, transparent 1px);
-    background-size: 20px 20px;
+.timer_logo{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.1;
 }
-.main_card{
-    background-color: #eaeaea;
-    border: 1px solid black;
-    margin: 5rem;
-} */
+.line1{
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: black;
+    vertical-align:baseline;
+    margin-left: 5px;
+}
+.line2{
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    vertical-align: baseline;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:0.8;
+}
+#timer_heading{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.time_block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.time_block input{
+    background: transparent;
+    border: none;
+    font-size: 6rem;
+    font-weight: 500;
+    width: 150px;
+    text-align: center;
+    outline: none;
+    display: flex;
+}
+.time_block span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -10px;
+    text-align: center;
+}
+.colon {
+    font-size: 5rem;
+    margin-top: -40px;
+}
+.str_stp_buton {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.str_stp_buton:hover{
+    transform: scale(1.1);
+}
+footer {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid black;
+    margin-top: auto; 
+    display: flex;
+    justify-content: center;
+}
+.developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+.developer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+.name {
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.social-links {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+}
+.social-links a {
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+.social-links a:hover {
+    transform: translateY(-3px); 
+}
