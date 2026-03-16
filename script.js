@@ -6,6 +6,10 @@ const timerHeading = document.getElementById('timer_heading');
 
 let timer;
 startButton.addEventListener('click', function() {
+    if(hoursInput.value==="00" && minutesInput.value==="00" && secondsInput.value==="00" ){
+        return;
+    };
+    startButton.textContent = "STOP TIMER";
     clearInterval(timer);
     let h = parseInt(hoursInput.value) || 0;
     let m = parseInt(minutesInput.value) || 0;
@@ -16,7 +20,8 @@ startButton.addEventListener('click', function() {
     timer = setInterval(function() {
         if (totalSeconds <= 0) {
             clearInterval(timer); 
-            heading.textContent = "Time's Up!";
+            timerHeading.textContent = "Time's Up!";
+            startButton.textContent = "START TIMER"
             return;
         }
         totalSeconds = totalSeconds - 1; 
